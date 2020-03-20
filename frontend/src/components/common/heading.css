@@ -1,0 +1,30 @@
+.heading {
+  font: normal 26px/36px ProximaNovaCond, Arial, sans-serif;
+  margin: 0 0 10px;
+}
+@media (min-width: 768px) {
+  .heading {
+    font-size: 36px;
+    line-height: 44px;
+  }
+}
+.heading_level-2 {
+  font-size: 20px;
+  line-height: 24px;
+}
+@media (min-width: 768px) {
+  .heading_level-2 {
+    font-size: 30px;
+    line-height: 37px;
+  }
+}
+.heading_level-3 {
+  font-size: 18px;
+  line-height: 22px;
+}
+@media (min-width: 768px) {
+  .heading_level-3 {
+    font-size: 30px;
+    line-height: 37px;
+  }
+}
