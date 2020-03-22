@@ -1,16 +1,15 @@
 import React from 'react';
-import Logo from './logo';
+import HHLogo from '../HHLogo/HHLogo';
 import './header-section.css';
 import '../common/columns.css';
 
-import {headerLogo} from '../variables';
 
 export default function() {
     return (
-        <header className="header header-red">
+        <header className="header">
             <div className="columns-wrapper">
                 <div className="header__content">
-                    <Logo url={headerLogo.url} src={headerLogo.src} alt={headerLogo.alt}/>
+                    <HHLogo size={50}/>
                     <div className="header__fill"></div>
                     <div className="header__button">
                         <button className="header-button-icon header-button-icon_login">Войти</button>

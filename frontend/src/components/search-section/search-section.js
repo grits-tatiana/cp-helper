@@ -2,13 +2,19 @@ import React from 'react';
 import './search-section.css';
 import '../common/columns.css';
 import '../common/input.css';
-import '../common/button.css';
 import '../common/heading.css';
+import Button from '../Button/Button';
 import Company from './company';
 
 export default function(props) {
 
     const inputCompany = React.useRef(null);
+
+    const handleSearchCopmany = () => {
+        // eslint-disable-next-line no-console
+        console.log(inputCompany.current.value);
+        props.requestAction(inputCompany.current.value);
+    };
 
     return (
         <section className="search-section">
@@ -34,17 +40,7 @@ export default function(props) {
                         }
                     </div>
                     <div className="column column_s-1 column_m-3 column_l-6">
-                        <button
-                            className="button"
-                            onClick={
-                                () => {
-                                    // eslint-disable-next-line no-console
-                                    console.log(inputCompany.current.value);
-                                    props.requestAction(inputCompany.current.value);
-                                }
-                            }>
-                            Найти
-                        </button>
+                        <Button onClick={handleSearchCopmany}>Найти</Button>
                     </div>
                 </div>
             </div>
