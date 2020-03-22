@@ -1,15 +1,14 @@
-import React from 'react';
-import { connect } from 'react-redux';
-import  SearchSection  from './search-section';
-import { requestAction } from './search-action';
+import {connect} from 'react-redux';
+import SearchSection from './search-section';
+import {requestAction} from './search-action';
 
 function mapStateToProps(state) {
-    return { ...state };
+    return {...state};
 }
 
 function mapDispatchToProps(dispatch) {
-    return { 
-        requestAction: (inputCompany) => dispatch(requestAction(inputCompany))
+    return {
+        requestAction: inputCompany => dispatch(requestAction(inputCompany)),
     };
 }
 

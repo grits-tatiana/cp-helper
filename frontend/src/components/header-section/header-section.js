@@ -1,13 +1,13 @@
-import React from "react";
-import Logo from "./logo";
-import "./header-section.css";
-import "../common/columns.css";
+import React from 'react';
+import Logo from './logo';
+import './header-section.css';
+import '../common/columns.css';
 
-import {headerLogo} from "../variables";
+import {headerLogo} from '../variables';
 
-export default function(props) {
+export default function() {
     return (
-        <header className="header">
+        <header className="header header-red">
             <div className="columns-wrapper">
                 <div className="header__content">
                     <Logo url={headerLogo.url} src={headerLogo.src} alt={headerLogo.alt}/>
@@ -18,6 +18,6 @@ export default function(props) {
                     </div>
                 </div>
             </div>
-        </header>       
+        </header>
     );
 }

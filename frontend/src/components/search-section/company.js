@@ -1,5 +1,5 @@
-import React from "react";
-import "./company.css";
+import React from 'react';
+import './company.css';
 
 export default function(props) {
     return (
