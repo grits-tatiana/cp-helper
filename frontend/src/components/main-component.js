@@ -1,12 +1,12 @@
 import React from 'react';
-
-import HeaderSection from './header-section/header-section';
+import Header from './Header/Header';
 import SearchSection from './search-section/search-connect';
+import './main.css';
 
 export default function() {
     return (
         <React.Fragment>
-            <HeaderSection/>
+            <Header/>
             <SearchSection/>
         </React.Fragment>
     );
